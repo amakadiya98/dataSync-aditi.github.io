@@ -1,23 +1,7 @@
 .dani-banner-section .banner-content{
     padding: 180px 0;
 }
-.banner-section.dani-banner-section{
-    background-image: url('../images/common-banner.png');
-    padding: 0;
-    margin: 0;
-    height: auto;
-}
-.banner-section.dani-banner-section p{
-    color: var(--secondary);
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    max-width: 70%;
-    margin: auto;
-    margin-top: 50px;
-}
+
 .dani-page .tab-content-part .nav-tabs {
     max-width: 60%;
 }

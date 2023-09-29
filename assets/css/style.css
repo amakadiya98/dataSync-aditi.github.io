@@ -91,7 +91,29 @@ a{
     background: var(--primary) !important;
     border: 1px solid var(--White) !important;
 }
+.owl-theme .owl-nav [class*=owl-]:hover{
+    background: transparent;
+}
 
+.up-btn button{
+    background-color: transparent;
+    border: 0;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+.up-btn button img{
+    width: 50px;
+}
+.whats-up-icon{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 2;
+}
+.whats-up-icon img{
+    width: 64px;
+}
 /* banner-section */
 .banner-section{
     background-image: url('../images/banner.png');
@@ -699,7 +721,7 @@ a{
 .information-section.light-section-color .image-part{
     position: absolute;
     right: 0;
-    width: 130%;
+    width: 108%;
 }
 .information-section.light-section-color .image-part img{
     width: 100%;
@@ -716,6 +738,183 @@ a{
 .nav-tabs .nav-item button{
     width: 100%;
 }
+/* neise common css */
+.banner-section.dani-banner-section p{
+    color: var(--secondary);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.banner-section.dani-banner-section{
+    background-image: url('../images/common-banner.png');
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow-x: hidden;
+}
+.banner-section.common-page-banner .banner-content h6{
+    text-align: left;
+    font-weight: 700;
+}
+.banner-section.common-page-banner .banner-content{
+    padding: 30px 0 50px;
+}
+.banner-section.common-page-banner .banner-content p{
+    text-align: left;
+    max-width: 100%;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    margin-top: 2px;
+}
+.breadcrumb .breadcrumb-item a, .breadcrumb-item.active{
+    color: var(--secondary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.banner-image-card{
+    position: absolute;
+    right: -12%;
+    bottom: 85px;
+}
+.banner-image-card .image-part img{
+    border: 14px solid #fff;
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+    width: 70%;
+    border-radius: 20px;
+}
+
+.small-section-title{
+    color: var(--primaryText);
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+.small-section-description{
+    color: var(--primaryText);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.opacity-ref-slider .owl-stage-outer{
+    padding-top: 80px;
+}
+.opacity-ref-slider .item{
+  opacity: 0.5;
+}
+.opacity-ref-slider .active .item{
+    opacity: 1;
+}
+.opacity-ref-slider .active .item .large-card{
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+.opacity-ref-slider .active .item .large-card .l-card-body{
+    padding: 70px;
+}
+.large-card{
+    border-radius: 11px;
+    border: 3px solid var(--primary);
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    filter: drop-shadow(0px 5px 10px rgba(255, 168, 92, 0.44));
+
+    padding: 3px;
+    height: 100%;
+}
+.l-card-header{
+    background-color: var(--primary);
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.l-card-body{
+    color: var(--secondary);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 50px;
+}
+.l-card-header p{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+}
+.l-card-header .image-part img{
+    width: 80px;
+    
+}
+.kolay-box-part .kolay-box{
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    gap: 30px;
+    border: 5px solid var(--White);
+}
+.kolay-box-part .kolay-box:hover{
+    border: 5px solid var(--primary);
+}
+.kolay-box-part .kolay-box h6{
+    margin-bottom: 0;
+    color: var(--secondary);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+}
+.kolay-box-part .kolay-box p{
+    margin-bottom: 0;
+    color: var(--secondary);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.kolay-box-part .row{
+    row-gap: 150px;
+}
+.kolay-section{
+   position: relative;
+}
+.kolay-section:after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/line-banner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 70%;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+}
+.mobile-banner-card{
+    display: none;
+}
 /* responsive  */
 @media screen and (max-width: 1660px) {
     .data-sync-section .right-part h3{
@@ -723,6 +922,9 @@ a{
     }
     .data-sync-section .right-part .reason{
         margin-bottom: 20px;
+    }
+    .banner-image-card{
+        right: -18%;
     }
 }
 @media screen and (max-width: 1600px) {
@@ -735,6 +937,9 @@ a{
     }
     .footer .footer-content .center-part .link-part .link-list .list-head{
         font-size: 14px;
+    }
+    .kolay-section:after{
+        top: 78%;
     }
 }
 @media screen and (max-width: 1500px) {
@@ -790,6 +995,9 @@ a{
         padding: 20px 50px;
         height: 130px;
     }
+    .kolay-section:after {
+        top: 85%;
+    }
 }
 @media screen and (max-width: 1366px) {
     .brand-decription-section .orange-white-part .white-part .inner-section-title {
@@ -823,6 +1031,18 @@ a{
     }
     .footer .footer-content .right-part .link-part a{
         padding: 8px 40px;
+    }
+    .banner-section.dani-banner-section p{
+        font-size: 24px;
+    }
+    .small-section-title{
+        font-size: 30px;
+    }
+    .reference-section .owl-nav{
+        width: 30%;
+    }
+    .information-section.light-section-color .image-part{
+        width: 140%;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -979,6 +1199,54 @@ a{
     .footer .footer-content .right-part .field-part{
         flex-direction: row-reverse;
     }
+    .banner-image-card{
+        right: -30%;
+    }
+    .banner-section.dani-banner-section p{
+        margin-top: 22px;
+        font-size: 22px;
+    }
+    .banner-section.dani-banner-section{
+        background-size: cover;
+    }
+    .tab-content-part .nav-tabs{
+        margin: 40px auto 20px;
+    }
+    .common-spacing{
+        margin-top: 40px;
+    }
+    .small-section-title {
+        font-size: 22px;
+        line-height: 35px;
+        margin-bottom: 16px;
+    }
+    .small-section-description{
+        font-size: 18px;
+    }
+    .opacity-ref-slider .owl-stage-outer{
+        padding-top: 40px;
+    }
+    .reference-section .owl-dots {
+        margin-top: 50px;
+    }
+    .kolay-box-part .kolay-box{
+        padding: 30px 10px;
+    }
+    .kolay-box-part .kolay-box{
+        gap: 10px;
+    }
+    .kolay-box-part .kolay-box img{
+        width: 60px;
+    }
+    .kolay-box-part .kolay-box h6{
+        font-size: 22px;
+    }
+    .kolay-box-part .kolay-box p{
+        font-size: 16px;
+    }
+    .kolay-box-part .row{
+        row-gap: 60px;
+    }
 }
 @media screen and (max-width: 991px) {
     .downBanner-btn{
@@ -1031,6 +1299,55 @@ a{
     }
     .brand-decription-section .orange-white-part .white-part .inner-section-title{
         text-align: left;
+    }
+    .banner-image-card{
+        display: none;
+    }
+    .banner-section .banner-content h6 {
+        font-size: 34px;
+    }
+    .l-card-header p{
+        font-size: 24px;
+    }
+    .l-card-header .image-part img{
+        width: 50px;
+    }
+    .opacity-ref-slider .active .item .large-card .l-card-body, .opacity-ref-slider .item .large-card .l-card-body{
+        padding: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .opacity-ref-slider .item .large-card{
+        padding: 10px;
+    }
+    .reference-section .owl-nav {
+        width: 50%;
+    }
+    .large-card{
+        box-shadow: none;
+        filter: none;
+    }
+    .reference-section .owl-dots {
+        margin-top: 24px;
+    }
+    .kolay-box-part .row{
+        row-gap: 20px;
+    }
+    .information-section .content{
+        padding: 30px;
+    }
+    .information-section .content .left-part h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .information-section .content .left-part ul li{
+        font-size: 14px;
+    }
+    .primary-btn-white, .primary-btn-green{
+        padding: 10px 20px;
+    }
+    .information-section .content .left-part{
+        gap: 30px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -1091,6 +1408,11 @@ a{
         max-width: 85%;
         margin: 30px auto 30px;
     }
+    .light-section-color .content{
+        background-image: none;
+    }
+    
+    
 }
 @media screen and (max-width: 767px){
     .section-title{
@@ -1222,8 +1544,8 @@ a{
     }
     
     .tab-content-part .tab-card .left-list-part li{
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 14px;
+    margin-bottom: 8px;
     }
     .tab-content-part .tab-card .left-list-part li::before{
         height: 4px;
@@ -1248,7 +1570,28 @@ a{
         padding: 20px;
     }
     .information-section .content .left-part h2{
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .opacity-ref-slider .active .item .large-card .l-card-body, .opacity-ref-slider .item .large-card .l-card-body {
+        padding: 20px 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .reference-section .owl-dots {
+        margin-top: 10px;
+    }
+    .opacity-ref-slider .owl-stage-outer {
+        padding-top: 30px;
+    }
+    .l-card-header .image-part img {
+        width: 30px;
+    }
+    .l-card-header{
+        gap: 10px;
+    }
+    .l-card-header p {
+        font-size: 14px;
     }
     .information-section .content .left-part ul{
         flex-direction: column;
@@ -1304,7 +1647,77 @@ a{
     .footer{
         padding: 60px 0 30px;
     }
-
+    .breadcrumb{
+        display: none;
+    }
+    .whats-up-icon{
+        display: none;
+    }
+    .banner-section.common-page-banner .banner-content h6{
+        text-align: center;
+    }
+    .banner-section.common-page-banner .banner-content p{
+        text-align: center;
+    }
+    .mobile-banner-card {
+        border: 12px solid var(--White);
+        box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+        max-width: 80%;
+        margin: 16px auto;
+        display: block;
+    }
+    .mobile-banner-card img{
+        width: 100%;
+    }
+    .banner-section.dani-banner-section{
+        background-size: contain;
+    }
+    .banner-section .banner-content h6{
+        font-size: 26px;
+    }
+    .banner-section.dani-banner-section p{
+        font-size: 16px;
+    }
+    .banner-section.common-page-banner .banner-content{
+        padding: 20px 0 10px;
+    }
+    .small-section-title{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .small-section-description {
+        font-size: 12px;
+    }
+    .kolay-section:after{
+        display: none;
+    }
+    .kolay-box-part .kolay-box img{
+        width: 40px;
+        text-align: left;
+    }
+    .kolay-box-part .kolay-box h6 {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .kolay-box-part .kolay-box{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        text-align: left;
+    }
+    .kolay-box-part .kolay-box p {
+        font-size: 14px;
+    }
+    .kolay-box-part .kolay-box .text-part{
+        flex: 1;
+    }
+    .kolay-box-part .kolay-box p{
+        flex: 2;
+    }
+    
 }
 @media screen and (max-width: 520px) {
     .whatsapp-section .content .left-part h2{
@@ -1338,9 +1751,7 @@ a{
     .data-sync-section .right-part h3 {
         font-size: 16px;
     }
-    .tab-content-part .tab-card .left-list-part li{
-        font-size: 14px;
-    }
+    
     .brand-decription-section .orange-white-part .white-part .inner-section-title {
         font-size: 14px;
         line-height: 20px;
