@@ -91,6 +91,7 @@ a{
     background: var(--primary) !important;
     border: 1px solid var(--White) !important;
 }
+
 /* banner-section */
 .banner-section{
     background-image: url('../images/banner.png');
@@ -646,8 +647,75 @@ a{
     display: block;
 }
 
-
-
+/* contact card  */
+.contact-card{
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    padding: 30px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.contact-card .image-box{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+}
+.contact-card p{
+    color: var(--secondary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin-top: 6px;
+}
+.contact-card h6{
+    margin-bottom: 0;
+    color: var(--secondary);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+.contact-card a{
+    color: var(--secondary);
+}
+.light-section-color .content{
+    background: var(--Light-Grey);
+}
+.information-section.light-section-color .content .left-part h2, .information-section .content .left-part ul li{
+    color: var(--secondary);
+}
+.information-section.light-section-color .content .left-part h2 strong{
+    color: var(--primary);
+}
+.information-section.light-section-color .image-part{
+    position: absolute;
+    right: 0;
+    width: 130%;
+}
+.information-section.light-section-color .image-part img{
+    width: 100%;
+}
+.nav-tabs{
+    justify-content: center;
+}
+.nav-tabs .nav-item{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav-tabs .nav-item button{
+    width: 100%;
+}
 /* responsive  */
 @media screen and (max-width: 1660px) {
     .data-sync-section .right-part h3{

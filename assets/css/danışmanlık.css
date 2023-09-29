@@ -1,0 +1,69 @@
+.dani-banner-section .banner-content{
+    padding: 180px 0;
+}
+.banner-section.dani-banner-section{
+    background-image: url('../images/common-banner.png');
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+.banner-section.dani-banner-section p{
+    color: var(--secondary);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+.dani-page .tab-content-part .nav-tabs {
+    max-width: 60%;
+}
+.tab-description p{
+    color: var(--secondary);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.basar-section .list-item {
+    margin-top: 80px;
+}
+.basar-section .list-item .list-box{
+    border-radius: 11px;
+    border: 5px solid #EEE;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.basar-section .list-item .list-box:last-child{
+    margin-bottom: 0;
+}
+.basar-section .list-item .list-box .image-box{
+    border-radius: 11px;
+    border: 4px solid var(--yeni-turuncu, #F69951);
+    background: var(--yeni-mavi, #517AF6);
+    box-shadow: 0px 5px 60px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+    width: 108px;
+    height: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.basar-section .list-item .list-box p{
+    margin-bottom: 0;
+    color: var(--secondary);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
