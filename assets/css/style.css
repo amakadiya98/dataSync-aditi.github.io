@@ -20,6 +20,12 @@ body {
 a{
     text-decoration: none;
 }
+button{
+    transition: all 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
 
 .container{
     max-width: 90%;
@@ -114,12 +120,204 @@ a{
 .whats-up-icon img{
     width: 64px;
 }
+/* header-part */
+.header-part{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--Light-Grey);
+    z-index: 9;
+}
+.container-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: inherit;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+}
+.logo-link-part{
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    padding: 10px 0 10px 20px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.nav-link-search-part{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+.navbar-nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button-orange{
+    position: relative;
+    width: 30%;
+}
+.orange-side-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: linear-gradient(135deg, #F47C20 1.35%, #FEA35D 145.22%);
+    filter: drop-shadow(0px 1px 20px rgba(248, 140, 56, 0.50));
+    padding: 20px 18px 20px 18px;
+    border-bottom-left-radius: 18px;
+    position: absolute;
+    height: 108px;
+    right: 0;
+    width: 100%;
+}
+.orange-side-part h6{
+    margin-bottom: 0;
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+}
+.search-language-part{
+    display: flex;
+    align-items: center;
+}
+.search-language-part .text{
+    color: var(--secondary);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 0 24px;
+   
+}
+.search-language-part .searc-icon{
+    padding: 0 24px;
+    position: relative;
+    cursor: pointer;
+}
+.search-language-part .searc-icon::before{
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: var(--secondary);
+    height: 50px;
+    left: 0;
+    top: -10px;
+}
+.primary-header-white{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: var(--secondary);
+}
+.nav-item .nav-link{
+    color: var(--secondary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.2s;
+}
+.nav-item .nav-link:hover, .nav-item .nav-link:active{
+    transform: scale(1.06);
+}
+.dropdown-toggle::after{
+    background-image: url('../images/dropdown-icon.svg');
+    width: 14px;
+    height: 8px;
+    border: 0;
+    bottom: -6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.dropdown-menu{
+    border: 0;
+    filter: drop-shadow(0px 5px 60px rgba(49, 69, 244, 0.10));
+    border-top: 4px solid var(--primary);
+    border-radius: 0;
+    margin-top: 16px !important;
+}
+.dropdown-item{
+    position: relative;
+    padding-bottom: 10px;
+    color: #B7B5B5;
+}
+.dropdown-item::before{
+    position: absolute;
+    content: "";
+    height: 80%;
+    width: 3px;
+    background-color: var(--primary);
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    color: var(--primary);
+}
+.dropdown-item:hover::before{
+    opacity: 1;
+}
+.display-search-part{
+    width: 100%;
+    position: relative;
+}
+.display-search-part .search-input input{
+    border-radius: 3px;
+    background: #D7E8FF;
+    width: 100%;
+    border: 1px solid #D7E8FF;
+    height: 50px;
+    padding-left: 48px;
+    font-size: 18px;
+}
+.cancle-icon{
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    cursor: pointer;
+}
+.ara-btn{
+    border-radius: 3px;
+    background: var(--yeni-mavi);
+    border: 1px solid var(--yeni-mavi);
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 20px;
+    margin: -5px 14px 0px 10px;
+}
+#search-btn, #cancel-search{
+    background-color: transparent;
+    border: 0;
+}
+header{
+    box-shadow: 0px -2px 20px 0px rgba(0, 0, 0, 0.25);
+}
+.navbar-toggler.collapsed .navbar-toggler-icon{
+    background-image: url('../images/bar.svg');
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url('../images/cancle.svg');
+}
 /* banner-section */
 .banner-section{
     background-image: url('../images/banner.png');
     background-size: cover;
     height: 100vh;
-    margin: 30px 0;
+    margin: 130px 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -915,6 +1113,9 @@ a{
 .mobile-banner-card{
     display: none;
 }
+.orange-box{
+    display: none;
+}
 /* responsive  */
 @media screen and (max-width: 1660px) {
     .data-sync-section .right-part h3{
@@ -925,6 +1126,12 @@ a{
     }
     .banner-image-card{
         right: -18%;
+    }
+    .navbar-nav{
+        width: 95%;
+    }
+    .nav-item .nav-link{
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 1600px) {
@@ -943,6 +1150,12 @@ a{
     }
 }
 @media screen and (max-width: 1500px) {
+    .navbar-nav{
+        width: 95%;
+    }
+    .nav-item .nav-link{
+        font-size: 16px;
+    }
     .banner-section .banner-content h6{
         font-size: 80px;
     }
@@ -1044,8 +1257,31 @@ a{
     .information-section.light-section-color .image-part{
         width: 140%;
     }
+    .orange-side-part{
+        gap: 10px;
+    }
+    .orange-side-part h6{
+        font-size: 16px;
+    }
+    .primary-header-white{
+        font-size: 16px;
+    }
+    .primary-header-white.arrow-btn img{
+        margin-left: 10px;
+        width: 30px;
+    }
+    .search-language-part .text{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width: 1280px) {
+    .nav-item .nav-link {
+        font-size: 14px;
+    }
+    .search-language-part .text {
+        font-size: 18px;
+        padding: 0 16px;
+    }
     .tab-content-part .nav-tabs {
         max-width: 52%;
     }
@@ -1064,6 +1300,21 @@ a{
     }
     .reference-section .owl-nav{
         width: 35%;
+    }
+    .orange-side-part{
+        flex-wrap: wrap;
+    }
+    .orange-side-part h6 {
+        font-size: 14px;
+    }
+    .primary-header-white {
+        padding: 6px 20px;
+    }
+    .search-language-part .text{
+        display: none;
+    }
+    .search-language-part .searc-icon::before{
+        display: none;
     }
 }
 @media screen and (max-width: 1120px){
@@ -1133,6 +1384,81 @@ a{
     }
 }
 @media screen and (max-width:1024px) {
+    .nav-link-search-part{
+        width: 100%;
+    }
+    .header-part{
+        background-color: #fff;
+    }
+    .logo-link-part{
+        margin-bottom: 0;
+    }
+    .search-language-part{
+        z-index: 9;
+        background-color: #fff;
+    }
+    .navbar-nav{
+        position: absolute;
+        background-color: #fff;
+        top: 80px;
+        z-index: 9;
+        width: 100%;
+        left: 0;
+        padding-top: 20px;
+        transition: all 1s;
+        transform: translateY(-520px);
+        z-index: -1;
+        /* padding: 20px; */
+    }
+    .nav-item .nav-link {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+    .navbar-collapse.show .navbar-nav{
+        transform: translateY(0px);
+    }
+    .nav-item{
+        padding: 4px 20px;
+    }
+    .orange-box{
+        padding: 15px;
+        background-color: var(--primary);
+        text-align: center;
+        color: var(--White);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        margin-top: 20px;
+        display: block;
+    }
+    .orange-box h6{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 16px;
+       
+    }
+    .navbar-collapse{
+        flex-basis: auto;
+    }
+    .navbar-brand{
+        order: 2;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .button-orange{
+        display: none;
+    }
+    .dropdown-toggle::after{
+        position: inherit;
+    }
+    .nav-item .nav-link:hover, .nav-item .nav-link:active{
+        transform: none;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
     .banner-section{
         background-size: contain;
         background-repeat: no-repeat;

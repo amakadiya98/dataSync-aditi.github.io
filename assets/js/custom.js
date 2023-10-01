@@ -41,3 +41,21 @@ $('.opacity-ref-slider').owlCarousel({
         },
     }
 })
+
+$(() => {
+    $('#search-btn').click(() => {
+        $('.hide-on-search').addClass('d-none')
+        $('.hide-on-search').removeClass('d-flex')
+        $('.show-on-search').addClass('d-flex')
+        $('.show-on-search').removeClass('d-none')
+        $('.logo-link-part').css('background', 'transparent')
+    })
+
+    $('#cancel-search').click(() => {
+        $('.hide-on-search').addClass('d-flex')
+        $('.hide-on-search').removeClass('d-none')
+        $('.show-on-search').addClass('d-none')
+        $('.show-on-search').removeClass('d-flex')
+        $('.logo-link-part').css('background', 'white')
+    })
+})
