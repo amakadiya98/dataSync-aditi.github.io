@@ -12,6 +12,119 @@
 </head>
 
 <body>
+     <!-- header-section -->
+     <header class="header-part">
+        <nav class="navbar navbar-expand-xl p-0">
+            <div class="container-wrapper p-0">
+                <div class="nav-link-search-part">
+                    <div class="logo-link-part">
+                        <a class="navbar-brand hide-on-search-mobile" href="./index.html"><img
+                                src="./assets/images/main-logo.png" alt="logo" /></a>
+                        <button class="navbar-toggler collapsed hide-on-search-mobile" id="open-serach" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <!-- <img src="./assets/images/bar.svg" alt="bar" /> -->
+                            </span>
+                        </button>
+                        <!-- mobile serach close btn -->
+                        <button class="close-btn mobile-close-btn close-btn-mob d-none show-on-search-mobile">
+                            <img src="./assets/images/cancle-icon.svg" alt="cancle" />
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="hide-on-search navbar-nav mb-2 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ne İşe Yarar?
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="./Ne_İşe_Yarar_Muhasebe.html">Muhasebe
+                                                Yönetimi</a></li>
+                                        <li><a class="dropdown-item" href="./Ne_İşe_Yarar_Sipariş.html">Sipariş
+                                                Yönetimi</a></li>
+                                        <li><a class="dropdown-item" href="./Ne_İşe_Yarar_Ürün.html">Ürün Yönetimi</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="./Ne_İşe_Yarar_Müşteri.html">Müşteri
+                                                Memnuniyeti Yönetimi</a></li>
+                                        <li><a class="dropdown-item" href="./Ne_İşe_Yarar_Stok.html">Stok & Depo
+                                                Yönetimi</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="./Hakkımızda.html">Hakkımızda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./Entegrasyonlar.html">Entegrasyonlar</a>
+                                </li>
+
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="./danışmanlık.html">
+                                        Danışmanlık
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./İletişim.html">İletişim</a>
+                                </li>
+                                 <li class="orange-box" >
+                                    <h6>Giriş Yap</h6>
+                                    <button class="primary-btn-green primary-header-white arrow-btn" onclick="window.location.href = './ÜcretsizDene.html'">
+                                        14 Gün Ücretsiz Dene
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- desktop search -->
+                            <div class="show-on-search d-none display-search-part">
+                                <!-- desktop-search-box -->
+                                <div class="search-input w-100">
+                                    <input type="text" />
+                                    <!-- desktop cancel -->
+                                    <button id="cancel-search" class="cancle-icon">
+                                        <img src="./assets/images/cancle.svg" alt="cancle" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- mobile search text-->
+                        <div class="search-input-mobile d-none show-on-search-mobile">
+                            <input type="text" placeholder="Ara" />
+                        </div>
+                    </div>
+                    <div class="search-language-part desktop-part">
+                        <div class="hide-on-search d-flex">
+                            <div class="text">ENG</div>
+                            <button id="search-btn" class="searc-icon">
+                                <img src="./assets/images/search.svg" alt="search" />
+                            </button>
+                        </div>
+                        <div class="show-on-search d-none">
+                            <button class="ara-btn">Ara</button>
+                        </div>
+                    </div>
+                    <!-- mobile-search-btn -->
+                    <div class="mobile-search-part">
+                        <button class="mobile-search-btn search-btn-mob">
+                            <img src="./assets/images/mobile-search.svg" alt="search" />
+                        </button>
+                    </div>
+                </div>
+                <div class="button-orange">
+                    <div class="orange-side-part">
+                        <h6>Giriş Yap</h6>
+                       <button class="primary-btn-green primary-header-white arrow-btn" onclick="window.location.href = './ÜcretsizDene.html'">
+                            Ücretsiz Dene <img src="./assets/images/arrow-icon-black.svg" alt="arrow">
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- page content -->
     <main class="neise-page">
         <section class="banner-section dani-banner-section common-page-banner">
             <div class="container position-relative">
@@ -354,6 +467,7 @@
             <img src="./assets/images/up-btn.png" alt="up-icon"/>
         </button>
     </div>
+      <!-- footer section start here -->
     <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -499,63 +613,4 @@
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/custom.js"></script>
-<!-- <script>
-    
-
-    $('.owl-carousel').owlCarousel({
-        items: 1,
-        loop: false,
-        nav: true,
-        navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
-        URLhashListener: true,
-        autoplayHoverPause: true,
-        startPosition: 'URLHash',
-        smartSpeed: 750
-    });
-</script>
-<script>
-    $(document).ready(function () {
-        // Get all the navigation links
-        var navLinks = $('.navigation a');
-
-        // Function to check if an element is in the viewport
-        function isElementInViewport(elem) {
-            var rect = elem.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        // Function to update the active link based on the visible section
-        function updateActiveLink() {
-            navLinks.removeClass('active');
-            $('.owl-carousel div[data-hash]').each(function () {
-                var section = this;
-                if (isElementInViewport(section)) {
-                    var dataHash = $(section).data('hash');
-                    navLinks.filter('[href="#' + dataHash + '"]').addClass('active');
-
-                    // Store the active link's state in localStorage
-                    localStorage.setItem('activeLink', dataHash);
-                }
-            });
-        }
-
-        // Retrieve the active link's state from localStorage and set it
-        var activeLink = localStorage.getItem('activeLink');
-        if (activeLink) {
-            navLinks.filter('[href="#' + activeLink + '"]').addClass('active');
-        } else {
-            // If no active link is stored, set a default active link here if needed.
-        }
-
-        // Call the updateActiveLink function when the user scrolls
-        $(window).on('scroll', updateActiveLink);
-    });
-</script> -->
-
-
 </html>

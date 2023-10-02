@@ -69,3 +69,9 @@
     font-weight: 400;
     src: url('../fonts/ArialRoundedMTBoldRegular.ttf') format('Truetype');
 }
+
+@font-face {
+    font-family: 'Russo One';
+    font-weight: 400;
+    src: url('../fonts/RussoOne-Regular.ttf') format('Truetype');
+}
