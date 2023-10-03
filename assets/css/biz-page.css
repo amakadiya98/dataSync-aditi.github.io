@@ -1,0 +1,188 @@
+.biz-content-part {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--primaryText);
+    max-width: 90%;
+    margin: auto;
+}
+.biz-content-part p{
+    margin-bottom: 40px;
+}
+.biz-content-part p:last-child{
+    margin-bottom: 0;
+}
+.logo-box-part{
+    border-radius: 5.6px;
+    background: #FFF;
+    padding: 3px;
+    box-shadow: 0px 4.66682px 56.00182px 0px rgba(49, 69, 244, 0.10);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-box-part .logo-box{
+    border-radius: 10.267px;
+    border: 2px solid #eee;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-box-part .logo-box img{
+    padding: 30px;
+    width: 90%;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.linkdin-part{
+    width: max-content;
+    margin: 90px auto;
+}
+.linkdin-part .linkdin-post-image{
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkdin-part .linkdin-post-image img{
+    width: 100%;
+    margin: 3px;
+}
+.linkdin-part .linkdin-content{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-radius: 11px;
+    border: 5px solid #EEE;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    padding: 20px;
+}
+.linkdin-part .linkdin-content .linkdin-text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    gap: 10px;
+}
+.linkdin-part .linkdin-content .linkdin-text h6{
+    font-size: 28px;
+    color: var(--primaryText);
+    margin-bottom: 0;
+}
+.linkdin-part .linkdin-content .linkdin-text p{
+    font-size: 22px;
+    color: var(--primaryText);
+    margin-bottom: 0;
+}
+.linkdin-part .linkdin-content .linkdin-text p.post{
+    color: #0071CE;
+    font-size: 22px;
+}
+.linkdin-button{
+    border: 8px solid var(--Light-Grey);
+    background-color: var(--primary);
+    border-radius: 10px;
+    height: 100%;
+    padding: 70px 10px;
+}
+.accordion-section button:hover{
+    transform: none;
+}
+.accordion-section .accordion-item{
+    margin-bottom: 20px;
+    border-radius: 11px;
+    border: 5px solid #EEE;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.10);
+    padding: 4px;
+}
+.accordion-section .accordion-item:last-child{
+    margin-bottom: 0;
+}
+.accordion-section button{
+    border-radius: 10px;
+    padding: 20px 20px;
+    font-size: 24px;
+    line-height: 40px;
+    max-width: 100%;
+}
+.accordion-button:not(.collapsed){
+    border-radius: 14px 15px 0px 0px !important;
+    background: var(--yeni-turuncu, #F69951);
+    color: #fff;
+}
+.accordion-collapse.collapse.show{
+    background-color: #F3F8FF;
+    border-radius: 0 0 10px 10px;
+}
+.accordion-body{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.accordion-button:focus{
+    border-color: var(--primary);
+    box-shadow: none;
+}
+.accordion-button::after{
+   
+    background-image: url('../images/add.png');
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url('../images/minus.png');
+}
+.information-section .left-part-info h2{
+    color: var(--primary);
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: white;
+  -webkit-text-fill-color: var(--primary); /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px #fff;
+}
+.information-section .left-part-info p{
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    color: white;
+}
+.haberler-section .haberler-content .image-part{
+    border-radius: 15px;
+    border: 10px solid var(--primary);
+}
+.haberler-section .haberler-content .image-part img{
+    width: 100%;
+}
+.haberler-section .haberler-content .text-card{
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 0px 5px 60px 0px rgba(49, 69, 244, 0.15);
+    padding: 40px;
+    margin-left: -100px;
+}
+.haberler-section .haberler-content .text-card h5{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--secondary);
+}
+.haberler-section .haberler-content .text-card p{
+    font-size: 20px;
+    color: var(--secondary);
+}
+.haberler-section .haberler-content .text-card p:last-child{
+    margin-bottom: 0;
+}
