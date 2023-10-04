@@ -236,6 +236,19 @@
         width: 78%;
     }
 }
+@media screen and (max-width: 767px) {
+    .form-contact-data .box-common-spacing{
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
+    .form-section .content .button {
+        margin-top: 30px;
+    }
+    .section-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
 
 @media (max-width: 576px) {
     .not-found-section .content .image-part {
@@ -243,7 +256,7 @@
     }
 
     .no-internet-section .content .image-part img {
-        width: 100%;
+        width: 60%;
     }
 
     .no-internet-section .content .text-part .text {
