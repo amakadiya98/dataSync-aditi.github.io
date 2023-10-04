@@ -32,3 +32,79 @@
 .tools-part .logo-section .logo-box img.large-image{
     width: 100%;
 }
+@media screen and (max-width: 1366px) {
+    .entegra-section p{
+        font-size: 22px;
+    }
+    .tools-part .logo-section{
+        gap: 3%;
+        row-gap: 30px;
+    }
+    .tools-part .logo-section .logo-box{
+        width: 17%;
+    }
+    .common-spacing {
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .fin-card-content-part .fin-card .image-part{
+        width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+    }
+    .fin-card-content-part .fin-card .image-part img{
+        width: 60%;
+    }
+    .fin-card-content-part .fin-card .fin-card-content p {
+        font-size: 18px;
+        gap: 10px;
+    }
+    .tools-part .logo-section .logo-box{
+        height: 150px;
+    }
+    .tools-part .logo-section .logo-box img.large-image {
+        width: 85%;
+    }
+    .tools-part .logo-section .logo-box img{
+        width: 85%;
+    }
+    .entegra-section p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width: 991px) {
+    .tools-part .logo-section .logo-box {
+        height: 120px;
+    }
+    .entegra-section .image-part img{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .entegra-section p{
+        font-size: 15px;
+    }
+    .fin-card-content-part .fin-card .fin-card-content p{
+        font-size: 14px;
+    }
+    .fin-card-content-part .fin-card .fin-card-content{
+        gap: 10px;
+    }
+    .tools-part .logo-section .logo-box {
+        width: 30%;
+    }
+    .tools-part .logo-section{
+        gap: 5%;
+        row-gap: 20px;
+    }
+    .tools-part .logo-section .logo-box {
+        height: 100px;
+    }
+    .common-spacing {
+        margin-top: 30px;
+    }
+}

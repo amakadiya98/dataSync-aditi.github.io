@@ -1313,6 +1313,8 @@ header{
 .fin-card-content-part .fin-card .image-part{
     width: 100px;
     height: 100px;
+    min-width: 100px;
+    min-height: 100px;
     border-radius: 4px;
     background-color: var(--primary);
     display: flex;
@@ -1518,6 +1520,7 @@ color: var(--primaryText);
     }
     .s-box-content p{
         line-height: 30px;
+        font-size: 18px;
     }
     .brand-decription-section .orange-white-part .branding-part{
         width: 72%;
@@ -1531,6 +1534,13 @@ color: var(--primaryText);
     }
     .brand-decription-section .orange-white-part .orange-part{
         padding: 60px 40px;
+    }
+    .tab-content-part .nav-tabs .nav-link{
+        font-size: 18px;
+    }
+    .tab-content-part .tab-card .left-list-part li{
+        font-size: 18px;
+        margin-bottom: 12px;
     }
 }
 @media screen and (max-width: 1440px) {
@@ -1550,8 +1560,45 @@ color: var(--primaryText);
     .kolay-section:after {
         top: 85%;
     }
+    .siparis-content .siparis-card .text-part p{
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 1366px) {
+    .banner-section .banner-content h6{
+        font-size: 68px;
+    }
+    .banner-section .banner-content h6{
+        font-size: 68px;
+    }
+    .banner-section .banner-content h3{
+        font-size: 70px;
+    }
+    .section-title{
+        font-size: 42px;
+    }
+    .brand-decription-section .orange-white-part .white-part .inner-section-title{
+        font-size: 28px;
+    }
+    .tab-content-part .nav-tabs {
+        max-width: 50%;
+    }
+    .information-section .content .left-part h2{
+        font-size: 42px;
+    }
+    .small-section-description, .fin-tick-card .fin-tick-card-content h6, .fin-card-content-part .fin-card .fin-card-content p{
+        font-size: 22px;
+    }
+    .fin-tick-card .fin-tick-card-content .image-part{
+        min-height: 115px;
+        max-height: 115px;
+    }
+    .information-section .two-box-part .box{
+        height: 250px;
+    }
+    .whatsapp-section .content .left-part h2{
+        font-size: 28px;
+    }
     .brand-decription-section .orange-white-part .white-part .inner-section-title {
         font-size: 34px;
     }
@@ -1612,6 +1659,47 @@ color: var(--primaryText);
     .search-language-part .text{
         font-size: 20px;
     }
+    .l-card-header p{
+        font-size: 24px;
+    }
+    .l-card-header .image-part img{
+        width: 60px;
+    }
+    .opacity-ref-slider .active .item .large-card .l-card-body, .l-card-body {
+        padding: 40px;
+    }
+    .l-card-body{
+        font-size: 22px;
+    }
+    .kolay-box-part .row{
+        row-gap: 120px;
+    }
+    .kolay-nasil-card .kolay-nasil-content .content h6{
+        font-size: 42px;
+    }
+    .yapay-card .yapay-title-image h6{
+        font-size: 22px;
+    }
+    .yapay-card .yapay-description p{
+        font-size: 20px;
+    }
+    .stock-card-section .l-card-header p {
+        font-size: 24px;
+    }
+    .stock-card-section .l-card-body{
+        padding: 20px;
+        font-size: 18px;
+    }
+    .stock-card-section .l-card-header p {
+        font-size: 18px;
+    }
+    .l-card-header{
+        gap: 10px;
+    }
+    .stock-card-section .l-card-header .image-part img {
+        width: 40px;
+    }
+   
 }
 @media screen and (max-width: 1280px) {
     .nav-item .nav-link {
@@ -1655,6 +1743,7 @@ color: var(--primaryText);
     .search-language-part .searc-icon::before{
         display: none;
     }
+   
 }
 @media screen and (max-width: 1120px){
     .banner-section .banner-content h6{
@@ -1814,6 +1903,9 @@ color: var(--primaryText);
         position: absolute;
         left: 20px;
     }
+    .banner-section.dani-banner-section{
+        margin-top: 80px;
+    }
     
     .orange-box{
         padding: 15px;
@@ -1935,7 +2027,7 @@ color: var(--primaryText);
         margin: 40px auto 20px;
     }
     .common-spacing{
-        margin-top: 40px;
+        margin-top: 60px;
     }
     .small-section-title {
         font-size: 22px;
@@ -1967,7 +2059,7 @@ color: var(--primaryText);
         font-size: 16px;
     }
     .kolay-box-part .row{
-        row-gap: 60px;
+        row-gap: 40px;
     }
     .contact-card{
         padding: 20px;
@@ -1987,10 +2079,61 @@ color: var(--primaryText);
         min-height: 400px;
     }
     .section-title{
-        font-size: 40px;
+        font-size: 34px;
     }
     .contact-form-part .form-part .field label{
         font-size: 16px;
+    }
+    .banner-section.dani-banner-section p{
+        font-size: 18px;
+    }
+    .siparis-content .siparis-card .image-part img{
+        width: 100%;
+    }
+    .siparis-content{
+        padding: 30px;
+    }
+    .siparis-content .siparis-card .text-part{
+        padding: 10px;
+    }
+    .siparis-content .siparis-card{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .siparis-content .siparis-card.center-card::before, .siparis-content .siparis-card.center-card::after{
+        display: none;
+    }
+    .siparish-line-section .shiparish-line-card .text-part p{
+        font-size: 16px;
+    }
+    .siparish-line-section .shiparish-line-card .image-part{
+        height: 80px;
+        width: 80px;
+        min-height: 80px;
+        min-width: 80px;
+    }
+    .siparish-line-section .shiparish-line-card .image-part img{
+        width: 70%;
+    }
+    .section-title-bottom-space{
+        margin-bottom: 20px;
+    }
+    .whats-up-icon{
+        bottom: 0;
+    }
+    .yapay-section .image-part img{
+        display: none;
+    }
+    .kolay-nasil-card .kolay-nasil-content .content h6 {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .kolay-nasil-card .kolay-nasil-content .image-part img{
+        width: 100%;
+    }
+    .kolay-nasil-card .kolay-nasil-content .image-part::before, .kolay-nasil-card .kolay-nasil-content .image-part:after{
+        left: -100px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -2017,7 +2160,7 @@ color: var(--primaryText);
         max-width: 80%;
     }
     .data-sync-section .right-part h3 {
-        font-size: 28px;
+        font-size: 24px;
         margin-bottom: 40px;
     }
     .brand-decription-section .orange-white-part .branding-part{
@@ -2100,17 +2243,69 @@ color: var(--primaryText);
     .banner-section.dani-banner-section p{
         max-width: 80%;
     }
+    .tick-section{
+        background-image: none;
+    }
+    .fin-tick-card .fin-tick-card-content .image-part, .fin-card-content-part .fin-card .image-part, .siparish-line-section .shiparish-line-card .image-part{
+        min-height: 80px;
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+    }
+    .fin-tick-card .fin-tick-card-content .image-part img{
+        width: 70%;
+    }
+    .fin-card-content-part .fin-card .image-part img{
+        width: 60%;
+    }
+    .small-section-description, .fin-tick-card .fin-tick-card-content h6, .fin-card-content-part .fin-card .fin-card-content p{
+        margin-bottom: 0;
+    }
+    .box-common-spacing{
+        margin-top: 60px;
+    }
+    .siparis-content {
+        padding: 10px;
+    }
+    .siparis-content .siparis-card{
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .siparis-content .siparis-card .text-part p{
+        font-size: 14px;
+    }
+    .siparish-line-section .shiparish-line-card .text-part p {
+        font-size: 14px;
+    }
+    .kolay-nasil-card .kolay-nasil-content .image-part{
+        display: none;
+    }
+    .kolay-nasil-card .kolay-nasil-content{
+        padding: 30px;
+        text-align: center;
+    }
+    .kolay-nasil-card{
+        background-image: none;
+    }
+    .kolay-nasil-card{
+        padding: 0px 0 30px;
+    }
+    .kolay-nasil-card .kolay-nasil-content .content h6 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
 }
 @media screen and (max-width: 768px) {
     .section-title{
-        font-size: 34px;
+        font-size: 28px;
     }
     .section-title-bottom-space{
         margin-bottom: 20px;
     }
-    .common-spacing{
+    /* .common-spacing{
         margin-top: 40px;
-    }
+    } */
     .ref-slider{
         margin: 20px 0;
     }
@@ -2118,8 +2313,12 @@ color: var(--primaryText);
         margin-top: 30px;
     }
     .banner-section .banner-content h3{
-        max-width: 75%;
+        max-width: 80%;
         margin: auto;
+        font-size: 42px;
+    }
+    .banner-section{
+        margin: 80px 0 30px;
     }
     .reference-section .content{
         padding: 30px;
@@ -2128,7 +2327,7 @@ color: var(--primaryText);
         width: 50%;
     }
     .banner-section{
-        height: 65vh;
+        height: 50vh;
     }
     .footer .footer-content{
         gap: 20px;
@@ -2163,7 +2362,20 @@ color: var(--primaryText);
         background-image: none;
     }
     
-    
+    .kolay-box-part .kolay-box{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        padding: 20px   ;
+    }
+    .kolay-box-part .kolay-box h6{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .kolay-box-part .kolay-box .text-part .image-part{
+        margin-bottom: 10px;
+    }
 }
 @media screen and (max-width: 767px){
     .section-title{
@@ -2475,7 +2687,98 @@ color: var(--primaryText);
     .iletişime-page .tab-description .row{
         row-gap: 20px;
     }
-    
+    .small-section-description, .fin-tick-card .fin-tick-card-content h6, .fin-card-content-part .fin-card .fin-card-content p{
+        font-size: 16px;
+    }
+    .fin-tick-card .fin-tick-card-content{
+        gap: 10px;
+    }
+    .fin-tick-card .fin-tick-card-content .image-part, .fin-card-content-part .fin-card .image-part {
+        min-height: 60px;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+    }
+    .siparis-content .siparis-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+    .siparis-content .siparis-card .image-part img {
+        width: 100px !important;
+    }
+    .siparis-content .row .d-grid:last-child .siparis-card{
+        margin-bottom: 0;
+    }
+    .siparish-line-section .shiparish-line-card .image-part img {
+        width: 60%;
+    }
+    .siparish-line-section .shiparish-line-card .text-part p {
+        font-size: 12px;
+    }
+    .siparish-line-content .row {
+        row-gap: 6px;
+    }
+    .banner-section.dani-banner-section {
+        margin-top: 60px;
+    }
+    .banner-section.common-page-banner .banner-content h6{
+        margin-bottom: 30px;
+    }
+    .siparish-line-section .shiparish-line-card .image-part {
+        min-height: 60px;
+        min-width: 60px;
+        width: 60px;
+        height: 60px;
+    }
+    .siparish-line-section{
+        background-image: none;
+    }
+    .yapay-card{
+        padding: 12px;
+    }
+    .yapay-card .yapay-title-image{
+        gap: 10px;
+    }
+    .yapay-card .yapay-title-image img{
+        width: 40px;
+    }
+    .yapay-card .yapay-title-image h6 {
+        font-size: 14px;
+    }
+    .yapay-card .yapay-description p {
+        font-size: 12px;
+        margin-bottom: 0;
+        margin-top: 6px;
+    }
+    .tab-content-part .nav-tabs{
+        padding: 10px 0;
+    }
+    .l-card-header{
+        padding: 8px 20px;
+        border-radius: 10px 10px 0 0;
+    }
+    .stock-card-section .l-card-body {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .stock-card-section .l-card-header p {
+        font-size: 16px;
+    }
+    .contact-form-part .form-part .field-data{
+        row-gap: 10px;
+    }
+    .contact-form-part .form-part{
+        padding: 20px;
+    }
+    .form-check-label{
+        font-size: 14px;
+    }
+    .iletişime-page{
+        margin-top: 80px;
+    }
 }
 @media screen and (max-width: 520px) {
     .whatsapp-section .content .left-part h2{
