@@ -170,3 +170,61 @@ $(() => {
     //     // Call the updateActiveLink function when the user scrolls
     //     $(window).on('scroll', updateActiveLink);
     // });
+
+
+    $(document).ready(function () {
+        var owl = $(".owl-carousel.tab-image-slider");
+
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            nav: true,
+            navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
+            URLhashListener: true,
+            autoplay: false,
+            autoplayHoverPause: true,
+            startPosition: 'URLHash',
+            smartSpeed: 750
+        });
+
+        owl.on('changed.owl.carousel.tab-image-slider', function (event) {
+            var currentItem = event.item.index;
+            $('.navigation-slider .column').removeClass('active');
+            $('.navigation-slider .column').eq(currentItem).addClass('active');
+        });
+
+        $('.navigation-slider .column').eq(0).addClass('active');
+    });
+    $(document).ready(function () {
+        var mainSlider = $(".owl-carousel.tab-image-slider");
+        mainSlider.owlCarousel({
+
+            onChanged: syncNavigation
+        });
+
+        var navigationSlider = $(".navigation-slider");
+        navigationSlider.owlCarousel({
+            items: 5,
+            loop: true,
+            margin: 10,
+            // center: true,
+            URLhashListener: true,
+            startPosition: 'URLHash',
+            dots: false,
+            nav: false,
+            loop: true,
+            responsive: {
+                0: {
+                    items: 3
+                },
+                768: {
+                    items: 5
+                }
+            }
+        });
+
+        function syncNavigation(event) {
+            var activeIndex = event.item.index;
+            navigationSlider.trigger('to.owl.carousel', [activeIndex, 300]);
+        }
+    });
