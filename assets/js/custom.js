@@ -6,7 +6,7 @@ $('.ref-slider').owlCarousel({
     navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
     responsive:{
         0:{
-            items:1.4
+            items:1
         },
         600:{
             items:3
@@ -80,7 +80,11 @@ $(() => {
     })
 })
 
-
+$(()=>{
+    $('.drop-down-hover').hover(() => {
+        $('.hover-show-dropdown').toggleClass('show')
+    })
+})
 $(() => {
     $('.search-btn-mob').click(() => {
         $('.hide-on-search-mobile').addClass('d-none')
@@ -228,3 +232,29 @@ $(() => {
             navigationSlider.trigger('to.owl.carousel', [activeIndex, 300]);
         }
     });
+
+    let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+$(document).ready(function(){
+	$(".hover-show-dropdown").hover(function(){
+		$(this).addClass("show");
+	});
+});

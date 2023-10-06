@@ -55,6 +55,9 @@
 .linkdin-part .linkdin-post-image img{
     width: 100%;
     margin: 3px;
+    border-radius: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .linkdin-part .linkdin-content{
     display: flex;
@@ -185,4 +188,186 @@
 }
 .haberler-section .haberler-content .text-card p:last-child{
     margin-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+    .biz-content-part{
+        font-size: 18px;
+    }
+    .logo-container{
+        gap: 18px;
+    }
+    .haberler-section .haberler-content .text-card h5{
+        font-size: 24px;
+    }
+    .haberler-section .haberler-content .text-card p{
+        font-size: 15px;
+    }
+    .haberler-section .haberler-content .text-card{
+        padding: 30px 20px;
+    }
+    .information-section .box-grid{
+        display: block;
+    }
+    .information-section .box-grid .two-box-part .box:last-child{
+        display: none;
+    }
+    .information-section .box-grid .two-box-part .box {
+        position: relative;
+        top: 0;
+    }
+    .hakkimizda-part .row{
+        flex-direction: column-reverse;
+    }
+    .hakkimizda-part  .left-part-info{
+        padding-top: 180px;
+    }
+    .information-section.hakkimizda-part  .two-box-part .box .content img{
+        margin-top: -80px;
+    }
+    .light-hakkimizda .image-part img{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .hakkimizda-part    .left-part-info h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .hakkimizda-part {
+        margin-top: 120px;
+    }
+    .linkdin-part{
+        width: 100%;
+    }
+    /* .linkdin-part .linkdin-content{
+        flex-wrap: wrap;
+    } */
+    .biz-content-part p{
+        margin-bottom: 20px;
+    }
+    .biz-content-part{
+        padding-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .biz-content-part {
+        font-size: 16px;
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    .logo-box-part{
+        height: 100px;
+        width: 170px;
+    }
+    .logo-container{
+        flex-wrap: wrap;
+    }
+    .logo-box-part .logo-box{
+        height: 100px;
+    }
+    .haberler-section .haberler-content .text-card {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: -150px;
+    }
+    .slider-ref-part .owl-carousel .owl-item img{
+        width: auto;
+    }
+    .ref-box {
+        height: 78px;
+        padding: 0px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .logo-box-part .logo-box img{
+        padding: 0;
+    }
+    .linkdin-part .linkdin-post-image{
+        width: 80px;
+        height: 80px;
+    }
+    .linkdin-part .linkdin-content .linkdin-text h6{
+        font-size: 16px;
+    }
+    .linkdin-part .linkdin-content .linkdin-text p, .linkdin-part .linkdin-content .linkdin-text p.post{
+        font-size: 14px;
+    }
+    .linkdin-part .linkdin-content .linkdin-text{
+        gap: 6px;
+    }
+    .linkdin-part .linkdin-content{
+        gap: 10px;
+        justify-content: flex-end
+    }
+     .linkdin-part .linkdin-content{
+        flex-wrap: wrap;
+    }
+    .linkdin-part .linkdin-content .linkdin-text{
+        width: 70%;
+    }
+    .linkdin-button{
+        padding: 8px 40px;
+        border-width: 4px;
+    }
+    .information-section.hakkimizda-part .two-box-part .box .content img{
+        height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 0;
+    }
+    .information-section.hakkimizda-part .content{
+        background-image: linear-gradient(80deg, var(--yeni-mavi) 40%, var(--dark-yeni-mavi) 0%);
+    }
+    .hakkimizda-part .left-part-info h2{
+        font-size: 36px;
+        -webkit-text-stroke: 1px #fff;
+    }
+    .information-section .left-part-info p{
+        font-size: 14px;
+    }
+    .accordion-section button{
+        font-size: 18px;
+        line-height: 30px;
+        padding: 10px;
+    }
+    .accordion-body{
+        font-size: 16px;
+    }
+    .accordion-section .accordion-item{
+        margin-bottom: 10px;
+    }
+    .information-section .two-box-part .box {
+        height: 200px;
+    }
+    .hakkimizda-part .left-part-info {
+        padding-top: 120px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .linkdin-part .linkdin-content{
+        justify-content: flex-end;
+    }
+    .linkdin-part .linkdin-content .linkdin-text {
+        width: 65%;
+    }
+    .linkdin-part{
+        margin: 30px 0;
+    }
+    .linkdin-part .linkdin-content .linkdin-text p, .linkdin-part .linkdin-content .linkdin-text p.post{
+        font-size: 12px;
+    }
+    .hakkimizda-part .left-part-info h2 {
+        font-size: 26px;
+    }
+    .logo-box-part{
+        width: 150px;
+    }
+    .haberler-section .haberler-content .text-card h5 {
+        font-size: 20px;
+    }
+    .haberler-section .haberler-content .text-card p {
+        font-size: 12px;
+    }
 }
