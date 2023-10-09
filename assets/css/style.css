@@ -90,7 +90,7 @@ button:hover{
     margin-bottom: 50px;
 }
 .owl-dot span{
-    background: var(--Light-Grey) !important;
+    background: #D6D6D6 !important
 }
 .owl-dot.active span{
     width: 28px !important;
@@ -1481,6 +1481,17 @@ color: var(--primaryText);
 .drop-down-wrapper .hover-show-dropdown li{
     background-color: #fff;
 }
+.whatspp-footer-icon{
+    width: 25px;
+}
+.login-button{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
+.light-ref-bg .content{
+    background-color: var(--Light-Grey);
+}
 /* responsive  */
 @media screen and (max-width: 1660px) {
     .data-sync-section .right-part h3{
@@ -1858,6 +1869,9 @@ color: var(--primaryText);
     .search-input-mobile {
         width: 100%;
         display: none;
+    }
+    .drop-down-wrapper{
+        margin-top: 0;
     }
     .mobile-close-btn{
         display: none;
