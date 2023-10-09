@@ -35,7 +35,7 @@ button:hover{
 }
 .box-common-spacing{
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 180px;
 }
 .primary-btn-white{
     padding: 20px 30px;
@@ -1597,6 +1597,9 @@ color: var(--primaryText);
     }
     .siparis-content .siparis-card .text-part p{
         font-size: 16px;
+    }
+    .box-common-spacing{
+        margin-bottom: 130px;
     }
 }
 @media screen and (max-width: 1366px) {

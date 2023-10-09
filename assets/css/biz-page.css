@@ -189,6 +189,11 @@
 .haberler-section .haberler-content .text-card p:last-child{
     margin-bottom: 0;
 }
+@media screen and (max-width: 1366px) {
+    .information-section .left-part-info h2{
+        font-size: 70px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .biz-content-part{
         font-size: 18px;
