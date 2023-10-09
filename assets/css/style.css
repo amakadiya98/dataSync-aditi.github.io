@@ -2427,10 +2427,20 @@ color: var(--primaryText);
         margin-bottom: 20px;
     }
     .banner-section{
-        background-image: url('../images/mobile-banner.png');
+        background-image: url('../images/mobile-home-banner.png');
         height: 70vh;
         padding: 20px 0;
         background-position: center;
+        background-size: cover;
+    }
+    .banner-section .banner-content{
+        padding-top: 100px;
+    }
+    .downBanner-btn {
+        bottom: -50px;
+    }
+    .landing-page-slider-content {
+        margin-top: 100px;
     }
     .down-btn{
         width: 50px;
@@ -2852,7 +2862,8 @@ color: var(--primaryText);
 }
 @media screen and (max-width: 375px) {
     .banner-section{
-        height: 60vh;
+       height: 75vh;
+       background-position: center;
     }
    
     .tab-content-part .nav-tabs .nav-link {
