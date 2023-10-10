@@ -80,26 +80,26 @@ $('.landing-data-slider').owlCarousel({
     }
 })
 
-$('.neise-slider-data').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+// $('.neise-slider-data').owlCarousel({
+//     loop:true,
+//     margin:10,
+//     nav:true,
+//     autoplay:true,
+//     autoplayTimeout:3000,
+//     autoplayHoverPause:true,
+//     navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:1
+//         },
+//         1000:{
+//             items:1
+//         }
+//     }
+// })
 
 
 
@@ -302,3 +302,55 @@ $(document).ready(function(){
 		$(this).addClass("show");
 	});
 });
+
+
+
+$(document).ready(function () {
+    var navCarousel = $("#widget-nav > .owl-carousel");
+    var contenCarousel = $("#widget-content > .owl-carousel");
+
+    navCarousel.owlCarousel({
+      dots: false,
+      nav: true,
+      center: true,
+      loop: true,
+      items: 4,
+      navText: ["<img src='./assets/images/prev-img.png'>", "<img src='./assets/images/next-img.png'>"],
+      responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        },
+        1025:{
+            items: 4
+        }
+    }
+    });
+
+    contenCarousel.owlCarousel({
+      center: true,
+      loop: true,
+      items: 1,
+    });
+
+    navCarousel.on("click", ".owl-item", function (e) {
+      e.preventDefault();
+      var carousel = navCarousel.data("owl.carousel");
+      carousel.to(carousel.relative($(this).index()));
+    });
+
+    navCarousel.on("changed.owl.carousel", function (e) {
+      var nextIndex = e.relatedTarget.relative(e.relatedTarget.current());
+      contenCarousel.trigger("to.owl.carousel", nextIndex);
+    });
+
+    contenCarousel.on("dragged.owl.carousel", function (e) {
+      var nextIndex = e.relatedTarget.relative(e.relatedTarget.current());
+      navCarousel.trigger("to.owl.carousel", nextIndex);
+    });
+  });
